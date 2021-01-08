@@ -42,3 +42,25 @@
 2021-01-08 20:07:16.185 - INFO - 8096 - azureml.train.automl._azureautomlclient._create_parent_run_for_remote:561 - [ParentRunID:AutoML_dc2dc594-c235-4b52-acfd-c2f33d29c859] Remote run using input X and y.
 2021-01-08 20:07:16.382 - INFO - 8096 - azureml.train.automl._azureautomlclient._create_parent_run_for_remote:574 - Parent Run ID: AutoML_dc2dc594-c235-4b52-acfd-c2f33d29c859
 2021-01-08 20:07:16.384 - INFO - 8096 - azureml.train.automl._azureautomlclient._fit_remote_core:502 - Starting a snapshot run (snapshot_id : None)
+2021-01-08 20:22:33.120 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package azureml-train-automl missing from dependencies file.
+2021-01-08 20:22:33.122 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: azureml-train-automl==1.19.0.*
+2021-01-08 20:22:33.123 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package pandas missing from dependencies file.
+2021-01-08 20:22:33.124 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: pandas==0.25.1
+2021-01-08 20:22:33.127 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package psutil missing from dependencies file.
+2021-01-08 20:22:33.129 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: psutil>5.0.0,<6.0.0
+2021-01-08 20:22:33.131 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package scikit-learn missing from dependencies file.
+2021-01-08 20:22:33.134 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: scikit-learn==0.22.1
+2021-01-08 20:22:33.137 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package numpy missing from dependencies file.
+2021-01-08 20:22:33.139 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: numpy~=1.18.0
+2021-01-08 20:22:33.140 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package py-xgboost missing from dependencies file.
+2021-01-08 20:22:33.144 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: py-xgboost<=0.90
+2021-01-08 20:22:33.176 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package inference-schema missing from dependencies file.
+2021-01-08 20:22:33.178 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package fbprophet missing from dependencies file.
+2021-01-08 20:22:33.179 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: fbprophet==0.5
+2021-01-08 20:22:33.180 - INFO - 8096 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package setuptools-git missing from dependencies file.
+2021-01-08 20:22:33.240 - INFO - 8096 - azureml.train.automl._azureautomlclient._validate_input:663 - Start data validation.
+2021-01-08 20:22:36.088 - INFO - 8096 - azureml.train.automl._azureautomlclient._validate_input:676 - Validation service found the data has no errors.
+2021-01-08 20:22:36.089 - INFO - 8096 - azureml.train.automl._azureautomlclient._create_parent_run_for_remote:541 - Start creating parent run.
+2021-01-08 20:22:36.535 - INFO - 8096 - azureml.train.automl._azureautomlclient._create_parent_run_for_remote:561 - [ParentRunID:AutoML_5a1a518c-0601-4968-9a98-c412529a55f3] Remote run using input X and y.
+2021-01-08 20:22:36.686 - INFO - 8096 - azureml.train.automl._azureautomlclient._create_parent_run_for_remote:574 - Parent Run ID: AutoML_5a1a518c-0601-4968-9a98-c412529a55f3
+2021-01-08 20:22:36.690 - INFO - 8096 - azureml.train.automl._azureautomlclient._fit_remote_core:502 - Starting a snapshot run (snapshot_id : None)
