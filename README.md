@@ -11,7 +11,7 @@ Copied from https://archive.ics.uci.edu/ml/datasets/bank+marketing
 The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe a term deposit (variable y). We do this with a hyperparameter search over a Logistic Regression and a AutoML approach.
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
-The best performing model was a AutoML model with StandardScalerWrapper and XGBoostClassifier as algorithm. The accuracy was 0.98240. It must be noted that the label data is imbalanced thus a better metric to use would have been the f1 score.
+The best performing model was a AutoML model composed of a VotingEnsemble, which is a mix of the prediction of several submodels. The accuracy was 0.91711. It must be noted that the label data is imbalanced thus a better metric to use would have been the f1 score.
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
@@ -29,10 +29,11 @@ AutoML basically tries a lot of different models and scalers and imputers and se
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
-The AutoML model performed much better (0.98 vs 0.90). This is because AutoML has a couple of advantages: 1) it tries out many different models 2) these models are more advanced than a 'simple' logistic regression model 3) The numeric features are scaled and imputed, which does not happen in the logistic pipeline.
+The AutoML model performed better (0.92 vs 0.90). This is because AutoML has a couple of advantages: 1) it tries out many different models 2) these models are more advanced than a 'simple' logistic regression model 3) The numeric features are scaled and imputed, which does not happen in the logistic pipeline.
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
+Add more data, engineer some extra features that the model can use to make better predictions.
 Use more hyperparameters for the logistic classifier, or increase the search space.
 Preprocess the data (scaling/normalization) may help to reduce a bias toward giving more attention to features with large absolute values.
 Imputing missing values may improve the score.
